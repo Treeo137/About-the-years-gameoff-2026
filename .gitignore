@@ -136,3 +136,40 @@ crashlytics-build.properties
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+
+# ==========================================
+# Our Unity Project
+# ==========================================
+
+# Unity generated folders
+/UnityProject/[Ll]ibrary/
+/UnityProject/[Tt]emp/
+/UnityProject/[Oo]bj/
+/UnityProject/[Bb]uild/
+/UnityProject/[Bb]uilds/
+/UnityProject/[Ll]ogs/
+/UnityProject/[Uu]ser[Ss]ettings/
+/UnityProject/[Mm]emory[Cc]aptures/
+/UnityProject/[Rr]ecordings/
+
+# Unity generated caches
+/UnityProject/[Aa]ssets/_Recovery/
+/UnityProject/[Aa]ssets/_Recovery.meta
+/UnityProject/[Aa]ssets/[Ss]ceneDependencyCache*
+/UnityProject/[Aa]ssets/Addressables_Temp/
+/UnityProject/[Aa]ssets/StreamingAssets/aa/
+/UnityProject/[Aa]ssets/StreamingAssets/aa.meta
+
+# Generated build outputs
+/Builds/*
+!/Builds/.gitkeep
+
+# Editor-specific files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
