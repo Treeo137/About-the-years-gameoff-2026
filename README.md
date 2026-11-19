@@ -107,3 +107,4 @@ Examples:
 - 使用 Git LFS 管理大型美术源文件及已配置的音频格式。
 - 导出像素素材时保持原始像素尺寸，不使用模糊缩放。
 - 导入 Unity 后，确保资源对应的 `.meta` 文件一并提交。
+[Project Naming Conventions](Docs/Art/NamingConventions.md)
