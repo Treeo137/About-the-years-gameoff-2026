@@ -46,3 +46,45 @@ Unity 游戏资源统一存放在：
 5. 使用 Unity `2022.3.62f3c1` 打开项目。
 
 **注意：不要直接选择仓库根目录作为 Unity 工程。**
+
+## Collaboration Guidelines
+
+### Git Workflow
+
+1. 开始工作前，先从远程仓库同步最新内容。
+2. `main` 分支用于保存稳定的游戏版本。
+3. 开发新功能时，创建 `feature/功能名称` 分支。
+4. 提交美术资源时，可以创建 `art/资源名称` 分支。
+5. 完成修改后，通过 Pull Request 请求合并。
+6. 合并前检查 Unity 工程是否能够正常打开和运行。
+
+### Unity Collaboration Rules
+
+- 不要提交 `Library/`、`Temp/`、`Obj/` 等 Unity 缓存目录。
+- 不要删除或忽略 Unity 自动生成的 `.meta` 文件。
+- 不要在 Unity 外随意移动已经导入的资源。
+- 尽量避免多人同时修改同一个 Scene 或 Prefab。
+- 修改公共场景前，先与负责整合的程序员沟通。
+- 提交修改时，使用清晰的 Commit message。
+
+### Asset Naming Conventions
+
+| Asset Type | Example |
+|---|---|
+| C# Script | `PlayerController.cs` |
+| Scene | `MainMenu.unity` |
+| Prefab | `PF_Player.prefab` |
+| Background | `BG_Room_2014.png` |
+| Character Sprite | `CHAR_Player_Idle.png` |
+| Animation | `AN_Player_Walk.anim` |
+| UI Sprite | `UI_Calendar_Icon.png` |
+| Sound Effect | `SFX_DoorOpen.wav` |
+| Background Music | `BGM_MainTheme.wav` |
+
+### Art Asset Workflow
+
+- 美术源文件（PSD、Aseprite）放在仓库根目录的 `ArtSource/`。
+- 导出的 PNG 游戏资源放在 `UnityProject/Assets/_Game/Art/` 对应目录。
+- 使用 Git LFS 管理大型美术源文件及已配置的音频格式。
+- 导出像素素材时保持原始像素尺寸，不使用模糊缩放。
+- 导入 Unity 后，确保资源对应的 `.meta` 文件一并提交。
